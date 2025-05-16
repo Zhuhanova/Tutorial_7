@@ -1,4 +1,4 @@
-public class Reptile extends Animal {
+public abstract class Reptile extends Animal {
 
     private String color;
 
@@ -14,17 +14,14 @@ public class Reptile extends Animal {
         this.color = color;
     }
 
-    @Override
-    public String makeSound(){
-        return "Woop";
-    }
+    public abstract String makeSound();
+
+    public abstract String move();
 
     @Override
-    public String move(){
-        return "Swimming";
+    public String naturalHabitat(){
+        return "Reptile";
     }
 
-    public String eat(){
-        return "Eats something";
-    }
+    public abstract String eat();
 }

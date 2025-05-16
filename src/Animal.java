@@ -26,6 +26,8 @@ public abstract class Animal {
 
     public abstract String move();
 
+    public abstract String naturalHabitat();
+
     public void displayInformation(){
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
